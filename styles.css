@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #010e1b, #6e0c03cd);  /* Diagonal gradient */
+    backdrop-filter: blur(2px);  /* Slight blur for a glass-like feel */
+  }
+  
+  #canvasContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);  /* Slight white overlay */
+    border-radius: 15px;  /* Rounded corners */
+    backdrop-filter: blur(10px);  /* Glass-like blur */
+    box-shadow: 0 6px 14px rgba(238, 3, 3, 0.619);  /* Subtle shadow */
+  }
+  
+  canvas {
+    box-shadow: 0px 4px 6px #00000029;
+    border-radius: 8px;
+  }
+  
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #mainCanvas, #perceptronCanvas {
+    border: 1px solid black;
+  }
+  
+  #perceptronOutput {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  #canvasContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;  /* Adds space between the canvases */
+  }
+  canvas:hover {
+    box-shadow: 0px 6px 10px #00000050;
+    cursor: pointer;
+  }
+  
+  canvas {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #metrics {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+  }
+  
+  #metrics p {
+    text-shadow: 0px 0px 5px #fff;
+  }
+  
+  #canvasContainer {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  /* styles.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b032160;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(215, 151, 151, 0.61);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgba(196, 11, 11, 0.682);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff0a0a;
+}

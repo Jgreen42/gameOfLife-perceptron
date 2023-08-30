@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Network and Game of Life</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="#" class="logo">Game Of Life - feeding a perceptron & exploring Data</a>
+                <ul class="nav-links">
+                    <li><a href="#">Created by Jgreen42 & GPT</a></li>
+                    
+                </ul>
+            </div>
+  <div id="container">
+    <button id="toggleBtn">Start</button>
+    
+    <div id="canvasContainer">
+        <canvas id="mainCanvas" width="450" height="450"></canvas>
+        <canvas id="perceptronCanvas" width="450" height="450"></canvas>
+       
+        
+      </div>
+      
+      <button id="trainBtn">Train</button>
+    <div id="metrics">
+      <p>Loss: <span id="loss">0</span></p>
+      <p>Output: <span id="outputValue">0</span></p> <!-- Added this line -->
+      <canvas id="outputChartCanvas" width="1000" height="150"></canvas>
+
+
+    </div>
+  </div>
+  <script src="chart.umd.js"></script>
+  <script src="gun.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
